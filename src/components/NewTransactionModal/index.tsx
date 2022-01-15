@@ -20,8 +20,6 @@ export function NewTransactionModal({ isOpen, onRequestClose }: INewTransactionM
      const data = {title, value, category, type}
 
      api.post('/transactions', data);
-
-
     }
 
     return (
@@ -73,13 +71,6 @@ export function NewTransactionModal({ isOpen, onRequestClose }: INewTransactionM
                 <button type="submit">Cadastrar</button>
             </Container>
         </Modal>
-
-
-
-
-
-
-
 
     )
 }

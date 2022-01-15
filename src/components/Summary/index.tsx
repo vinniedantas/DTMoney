@@ -1,7 +1,7 @@
 import { Container } from "./styles";
-import incomeImg from "../../assets/Income.svg";
-import outcomeImg from "../../assets/Outcome.svg";
-import totalImg from "../../assets/Total.svg";
+import incomeImg from "../../assets/images/Income.svg";
+import outcomeImg from "../../assets/images/Outcome.svg";
+import totalImg from "../../assets/images/Total.svg";
 
 export function Summary() {
     return (

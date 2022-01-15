@@ -1,4 +1,4 @@
-import logoImg from "../../assets/Logo.svg";
+import logoImg from "../../assets/images/Logo.svg";
 import { Container, Content } from "./styles";
 import { IHeaderProps } from "./IHeaderProps";
 

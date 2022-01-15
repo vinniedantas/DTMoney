@@ -3,7 +3,7 @@ import { Header } from "./components/Header/index";
 import { NewTransactionModal } from "./components/NewTransactionModal/index";
 import { Dashboard } from "./components/Dashboard/index";
 import Modal from "react-modal";
-import { GlobalStyle } from "./styles/globals";
+import { GlobalStyle } from "./assets/styles/globals";
 
 Modal.setAppElement("#root");
 

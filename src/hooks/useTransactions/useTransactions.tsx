@@ -1,5 +1,5 @@
 //Importing the function createContext from react//
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 import { useState, useEffect } from "react";
 import { api } from "../../services/api";
 import { ITransaction } from "../../components/TransactionsTable/ITransaction";
@@ -13,7 +13,7 @@ interface TransactionsContextData {
 }
 
 //Storing the function createContext inside a variable Transactions Context and defining an initial value as an empty Array//
-export const TransactionsContext = createContext<TransactionsContextData>(
+const TransactionsContext = createContext<TransactionsContextData>(
 	{} as TransactionsContextData,
 );
 
@@ -42,4 +42,9 @@ export function TransactionsProvider({ children }: ITransactionsProviderProps) {
 			{children}
 		</TransactionsContext.Provider>
 	);
+}
+
+export function useTransactions() {
+	const context = useContext(TransactionsContext);
+	return context;
 }

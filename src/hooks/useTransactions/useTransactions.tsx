@@ -12,7 +12,7 @@ interface TransactionsContextData {
 	createTransaction: (transaction: TransactionInput) => Promise<void>;
 }
 
-//Storing the function createContext inside a variable Transactions Context and defining an initial value as an empty Array//
+//Storing the function createContext inside a variable Transactions Context and defining an initial value as an empty object//
 const TransactionsContext = createContext<TransactionsContextData>(
 	{} as TransactionsContextData,
 );
